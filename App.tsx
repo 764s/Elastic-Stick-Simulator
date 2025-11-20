@@ -128,6 +128,33 @@ const App: React.FC = () => {
         }
     },
     {
+        name: "🗡️ Carbon Fiber / Tactical",
+        desc: "Extreme taper, highly rigid.",
+        params: {
+            /* --- PHYSICS ANALYSIS FOR REALISM ---
+             * 1. Max Taper (100%):
+             *    By concentrating mass and stiffness at the grip (Root), the stick 
+             *    behaves like an engineered tool or sword tang. It eliminates 
+             *    bending at the handle, transferring all flex to the tip.
+             * 2. Tight Bend Limit (35°):
+             *    This is the key to the "Solid Object" feel. Real rigid materials 
+             *    (carbon fiber, steel) do not bend 90 degrees during a swing.
+             *    Clamping this forces the physics to maintain a straight line 
+             *    under high velocity, creating a sharp, cutting visual.
+             * 3. High Axial Stiffness (396):
+             *    Prevents any visible stretching, maintaining the weapon's reach.
+             */
+            gripRatio: 0,
+            taper: 1.0,
+            stiffness: 300,
+            damping: 12.8,
+            mass: 0.1,
+            stretchFactor: 396,
+            maxStretchRatio: 3.0, // 200% stretch allowed (though stiffness prevents it)
+            maxBendAngle: 35
+        }
+    },
+    {
         name: "🎣 Fishing Rod",
         desc: "High taper, whippy tip.",
         params: {
