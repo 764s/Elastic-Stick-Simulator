@@ -1,0 +1,5 @@
+{
+  "name": "Elastic Stick Simulator",
+  "description": "A physics-based visualization of a flexible, elastic stick with 3D cartoon physics.",
+  "requestFramePermissions": []
+}
